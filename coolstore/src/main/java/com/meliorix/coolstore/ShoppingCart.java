@@ -9,17 +9,17 @@ public class ShoppingCart implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "Shopping Cart Promotional Savings")
+   @org.kie.api.definition.type.Label("Shopping Cart Promotional Savings")
    private java.lang.Double cartItemPromoSavings;
-   @org.kie.api.definition.type.Label(value = "Shopping Cart Item Total")
-   private java.lang.Double carItemTotal;
-   @org.kie.api.definition.type.Label(value = "Shopping Cart Total")
+   @org.kie.api.definition.type.Label("Shopping Cart Item Total")
+   private java.lang.Double cartItemTotal;
+   @org.kie.api.definition.type.Label("Shopping Cart Total")
    private java.lang.Double cartTotal;
-   @org.kie.api.definition.type.Label(value = "Shipping Promotional Savings")
+   @org.kie.api.definition.type.Label("Shipping Promotional Savings")
    private java.lang.Double shippingPromoSavings;
-   @org.kie.api.definition.type.Label(value = "Shipping Total")
+   @org.kie.api.definition.type.Label("Shipping Total")
    private java.lang.Double shippingTotal;
-   @org.kie.api.definition.type.Label(value = "Shopping Cart Item List")
+   @org.kie.api.definition.type.Label("Shopping Cart Item List")
    private java.util.List<com.meliorix.coolstore.ShoppingCartItem> shoppingCartItemList;
 
    public ShoppingCart()
@@ -34,16 +34,6 @@ public class ShoppingCart implements java.io.Serializable
    public void setCartItemPromoSavings(java.lang.Double cartItemPromoSavings)
    {
       this.cartItemPromoSavings = cartItemPromoSavings;
-   }
-
-   public java.lang.Double getCarItemTotal()
-   {
-      return this.carItemTotal;
-   }
-
-   public void setCarItemTotal(java.lang.Double carItemTotal)
-   {
-      this.carItemTotal = carItemTotal;
    }
 
    public java.lang.Double getCartTotal()
@@ -87,16 +77,26 @@ public class ShoppingCart implements java.io.Serializable
       this.shoppingCartItemList = shoppingCartItemList;
    }
 
+   public java.lang.Double getCartItemTotal()
+   {
+      return this.cartItemTotal;
+   }
+
+   public void setCartItemTotal(java.lang.Double cartItemTotal)
+   {
+      this.cartItemTotal = cartItemTotal;
+   }
+
    public ShoppingCart(
          java.lang.Double cartItemPromoSavings,
-         java.lang.Double carItemTotal,
+         java.lang.Double cartItemTotal,
          java.lang.Double cartTotal,
          java.lang.Double shippingPromoSavings,
          java.lang.Double shippingTotal,
          java.util.List<com.meliorix.coolstore.ShoppingCartItem> shoppingCartItemList)
    {
       this.cartItemPromoSavings = cartItemPromoSavings;
-      this.carItemTotal = carItemTotal;
+      this.cartItemTotal = cartItemTotal;
       this.cartTotal = cartTotal;
       this.shippingPromoSavings = shippingPromoSavings;
       this.shippingTotal = shippingTotal;
