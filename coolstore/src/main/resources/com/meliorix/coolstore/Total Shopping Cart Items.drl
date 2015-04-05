@@ -1,6 +1,11 @@
 package com.meliorix.coolstore;
 
-rule "Print out carts"
-    when $sc: ShoppingCart()
-    then System.out.println("We have a cart = " + $sc);
+rule "Total Shopping Cart Items"
+    ruleflow-group "pricing-rules"
+    no-loop true
+    when
+        $sc: ShoppingCart( )
+        $sci: ShoppingCartItem( shoppingCart == $sc )
+    then
+
 end
