@@ -1,2 +1,6 @@
 package com.meliorix.coolstore;
 
+rule "Print out carts"
+    when $sc: ShoppingCart()
+    then System.out.println("We have a cart = " + $sc);
+end
