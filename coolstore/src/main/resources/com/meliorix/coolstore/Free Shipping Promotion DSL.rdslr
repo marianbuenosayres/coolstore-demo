@@ -1,0 +1,9 @@
+package com.meliorix.coolstore;
+
+import java.lang.Number;
+
+rule "Free Shipping Promotion DSL"
+	dialect "mvel"
+	when
+	then
+end
