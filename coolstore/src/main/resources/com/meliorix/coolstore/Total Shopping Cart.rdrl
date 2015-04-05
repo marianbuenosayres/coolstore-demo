@@ -1,9 +1,0 @@
-package com.meliorix.coolstore;
-
-import java.lang.Number;
-
-rule "Total Shopping Cart"
-	dialect "mvel"
-	when
-	then
-end
