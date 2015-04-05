@@ -1,9 +1,15 @@
 package com.meliorix;
 
 import java.lang.Number;
+import com.meliorix.coolstore.ShoppingCart;
 
 rule "Total Shopping Cart"
 	dialect "mvel"
 	when
+		$sc : ShoppingCart( )
 	then
+		modify( $sc ) {
+				setCartTotal( 0 ), 
+				setCartItemPromoSavings( ($sc.cartItemPromoSavings == 0.0) ? 0.0 : $sc.cartItemPromoSavings * -1 )
+		}
 end
