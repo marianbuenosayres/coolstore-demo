@@ -5,5 +5,11 @@ import java.lang.Number;
 rule "Apply Cart Item Promotions"
 	dialect "mvel"
 	when
+		$sci : ShoppingCartItem( $itemId : itemId)
+		PromoEvent( itemId == $itemId && $pctOff : percentOff) from entry-point "Promo Stream"
 	then
+		modify( $sci ) {
+				setPromoSavings( 0.0 ), 
+				setPrice( 0.0 )
+		}
 end
