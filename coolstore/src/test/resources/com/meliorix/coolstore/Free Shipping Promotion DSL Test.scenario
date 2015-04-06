@@ -41,7 +41,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>2</executionTimeResult>
+      <executionTimeResult>1</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
@@ -55,7 +55,7 @@
       <fieldValues>
         <expect-field>
           <fieldName>shippingTotal</fieldName>
-          <expected></expected>
+          <expected>0.00</expected>
           <actualResult>0.0</actualResult>
           <successResult>false</successResult>
           <explanation>[$sc1] field [shippingTotal] was [0.0] expected [].</explanation>
@@ -81,7 +81,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2015-04-06 01:33:06.884 UTC</lastRunResult>
+  <lastRunResult>2015-04-06 01:33:29.586 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.meliorix.coolstore</packageName>
