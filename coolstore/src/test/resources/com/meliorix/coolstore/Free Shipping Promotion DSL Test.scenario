@@ -57,10 +57,10 @@
           <fieldName>shippingTotal</fieldName>
           <expected>0.00</expected>
           <actualResult>0.0</actualResult>
-          <successResult>false</successResult>
-          <explanation>[$sc1] field [shippingTotal] was [0.0] expected [].</explanation>
+          <successResult>true</successResult>
+          <explanation>[$sc1] field [shippingTotal] was [0.00].</explanation>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>$sc1</name>
@@ -81,7 +81,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2015-04-06 01:33:29.586 UTC</lastRunResult>
+  <lastRunResult>2015-04-06 01:42:36.818 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.meliorix.coolstore</packageName>
