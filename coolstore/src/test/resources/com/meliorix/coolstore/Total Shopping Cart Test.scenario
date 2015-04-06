@@ -50,8 +50,40 @@
       <name>$sc2</name>
       <isModify>false</isModify>
     </fact-data>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>0</executionTimeResult>
+      <numberOfRulesFired>0</numberOfRulesFired>
+    </execution-trace>
+    <expect-rule>
+      <ruleName>Total Shopping Cart</ruleName>
+      <expectedFire>true</expectedFire>
+    </expect-rule>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>cartTotal</fieldName>
+          <expected></expected>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
+      </fieldValues>
+      <name>$sc1</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>cartTotal</fieldName>
+          <expected>24.990000000000002</expected>
+          <operator>==</operator>
+          <nature>0</nature>
+        </expect-field>
+      </fieldValues>
+      <name>$sc2</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
   </fixtures>
+  <lastRunResult>2015-04-06 02:47:28.482 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.meliorix.coolstore</packageName>
