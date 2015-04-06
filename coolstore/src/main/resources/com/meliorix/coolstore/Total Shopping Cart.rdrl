@@ -4,6 +4,8 @@ import java.lang.Number;
 
 rule "Total Shopping Cart"
 	dialect "mvel"
+	no-loop true
+	ruleflow-group "total-rules"
 	when
 	then
 end
