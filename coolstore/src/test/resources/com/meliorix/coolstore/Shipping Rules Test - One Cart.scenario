@@ -11,7 +11,7 @@
       <fieldData>
         <field-data>
           <name>cartItemTotal</name>
-          <value>0.01</value>
+          <value>0.00</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
@@ -88,7 +88,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2015-04-06 01:53:54.621 UTC</lastRunResult>
+  <lastRunResult>2015-04-06 01:54:24.514 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.meliorix.coolstore</packageName>
