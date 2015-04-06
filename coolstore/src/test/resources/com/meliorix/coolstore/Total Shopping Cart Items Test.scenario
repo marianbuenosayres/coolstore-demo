@@ -77,30 +77,41 @@
       <name>$sci2</name>
       <isModify>false</isModify>
     </fact-data>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>3</executionTimeResult>
+      <numberOfRulesFired>2</numberOfRulesFired>
+    </execution-trace>
     <expect-rule>
       <ruleName>Total Shopping Cart Items</ruleName>
+      <explanation>Rule [Total Shopping Cart Items] was activated 2 times.</explanation>
       <expectedFire>true</expectedFire>
+      <successResult>true</successResult>
+      <actualResult>2</actualResult>
     </expect-rule>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>cartItemTotal</fieldName>
           <expected>20.990000000000002</expected>
+          <successResult>true</successResult>
+          <explanation>[$sc] field [cartItemTotal] was [20.990000000000002].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
         <expect-field>
           <fieldName>cartItemPromoSavings</fieldName>
           <expected>3.0</expected>
+          <successResult>true</successResult>
+          <explanation>[$sc] field [cartItemPromoSavings] was [3.0].</explanation>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>$sc</name>
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
+  <lastRunResult>2015-04-06 03:02:10.532 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.meliorix.coolstore</packageName>
