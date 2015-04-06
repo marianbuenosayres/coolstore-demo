@@ -20,14 +20,14 @@
     </fact-data>
     <execution-trace>
       <executionTimeResult>0</executionTimeResult>
-      <numberOfRulesFired>1</numberOfRulesFired>
+      <numberOfRulesFired>0</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
       <ruleName>Row 1 Shipping Rules</ruleName>
       <expectedCount>1</expectedCount>
-      <explanation>Rule [Row 1 Shipping Rules] activated 1 times.</explanation>
-      <successResult>true</successResult>
-      <actualResult>1</actualResult>
+      <explanation>Rule [Row 1 Shipping Rules] activated 0 times. Expected 1 times.</explanation>
+      <successResult>false</successResult>
+      <actualResult>0</actualResult>
     </expect-rule>
     <expect-fact>
       <fieldValues>
@@ -35,8 +35,8 @@
           <fieldName>shippingTotal</fieldName>
           <expected>2.99</expected>
           <actualResult></actualResult>
-          <successResult>true</successResult>
-          <explanation>[$sc] field [shippingTotal] was [2.99].</explanation>
+          <successResult>false</successResult>
+          <explanation>[$sc] field [shippingTotal] was [] expected [2.99].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -63,14 +63,14 @@
     </fact-data>
     <execution-trace>
       <executionTimeResult>0</executionTimeResult>
-      <numberOfRulesFired>1</numberOfRulesFired>
+      <numberOfRulesFired>0</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
       <ruleName>Row 1 Shipping Rules</ruleName>
       <expectedCount>1</expectedCount>
-      <explanation>Rule [Row 1 Shipping Rules] activated 1 times.</explanation>
-      <successResult>true</successResult>
-      <actualResult>1</actualResult>
+      <explanation>Rule [Row 1 Shipping Rules] activated 0 times. Expected 1 times.</explanation>
+      <successResult>false</successResult>
+      <actualResult>0</actualResult>
     </expect-rule>
     <expect-fact>
       <fieldValues>
@@ -78,8 +78,8 @@
           <fieldName>shippingTotal</fieldName>
           <expected>2.99</expected>
           <actualResult>0.0</actualResult>
-          <successResult>true</successResult>
-          <explanation>[$sc] field [shippingTotal] was [2.99].</explanation>
+          <successResult>false</successResult>
+          <explanation>[$sc] field [shippingTotal] was [0.0] expected [2.99].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -106,22 +106,23 @@
     </fact-data>
     <execution-trace>
       <executionTimeResult>0</executionTimeResult>
-      <numberOfRulesFired>1</numberOfRulesFired>
+      <numberOfRulesFired>0</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
       <ruleName>Row 2 Shipping Rules</ruleName>
       <expectedCount>1</expectedCount>
-      <explanation>Rule [Row 2 Shipping Rules] activated 1 times.</explanation>
-      <successResult>true</successResult>
-      <actualResult>1</actualResult>
+      <explanation>Rule [Row 2 Shipping Rules] activated 0 times. Expected 1 times.</explanation>
+      <successResult>false</successResult>
+      <actualResult>0</actualResult>
     </expect-rule>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>shippingTotal</fieldName>
           <expected>4.99</expected>
-          <successResult>true</successResult>
-          <explanation>[$sc] field [shippingTotal] was [4.99].</explanation>
+          <actualResult>0.0</actualResult>
+          <successResult>false</successResult>
+          <explanation>[$sc] field [shippingTotal] was [0.0] expected [4.99].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -148,22 +149,23 @@
     </fact-data>
     <execution-trace>
       <executionTimeResult>0</executionTimeResult>
-      <numberOfRulesFired>1</numberOfRulesFired>
+      <numberOfRulesFired>0</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
       <ruleName>Row 3 Shipping Rules</ruleName>
       <expectedCount>1</expectedCount>
-      <explanation>Rule [Row 3 Shipping Rules] activated 1 times.</explanation>
-      <successResult>true</successResult>
-      <actualResult>1</actualResult>
+      <explanation>Rule [Row 3 Shipping Rules] activated 0 times. Expected 1 times.</explanation>
+      <successResult>false</successResult>
+      <actualResult>0</actualResult>
     </expect-rule>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>shippingTotal</fieldName>
           <expected>6.99</expected>
-          <successResult>true</successResult>
-          <explanation>[$sc] field [shippingTotal] was [6.99].</explanation>
+          <actualResult>0.0</actualResult>
+          <successResult>false</successResult>
+          <explanation>[$sc] field [shippingTotal] was [0.0] expected [6.99].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -189,15 +191,15 @@
       <isModify>true</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>1</executionTimeResult>
-      <numberOfRulesFired>1</numberOfRulesFired>
+      <executionTimeResult>0</executionTimeResult>
+      <numberOfRulesFired>0</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
       <ruleName>Row 4 Shipping Rules</ruleName>
       <expectedCount>1</expectedCount>
-      <explanation>Rule [Row 4 Shipping Rules] activated 1 times.</explanation>
-      <successResult>true</successResult>
-      <actualResult>1</actualResult>
+      <explanation>Rule [Row 4 Shipping Rules] activated 0 times. Expected 1 times.</explanation>
+      <successResult>false</successResult>
+      <actualResult>0</actualResult>
     </expect-rule>
     <expect-fact>
       <fieldValues>
@@ -205,8 +207,8 @@
           <fieldName>shippingTotal</fieldName>
           <expected>8.99</expected>
           <actualResult>0.0</actualResult>
-          <successResult>true</successResult>
-          <explanation>[$sc] field [shippingTotal] was [8.99].</explanation>
+          <successResult>false</successResult>
+          <explanation>[$sc] field [shippingTotal] was [0.0] expected [8.99].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -232,23 +234,24 @@
       <isModify>true</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>0</executionTimeResult>
-      <numberOfRulesFired>1</numberOfRulesFired>
+      <executionTimeResult>1</executionTimeResult>
+      <numberOfRulesFired>0</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
       <ruleName>Row 5 Shipping Rules</ruleName>
       <expectedCount>1</expectedCount>
-      <explanation>Rule [Row 5 Shipping Rules] activated 1 times.</explanation>
-      <successResult>true</successResult>
-      <actualResult>1</actualResult>
+      <explanation>Rule [Row 5 Shipping Rules] activated 0 times. Expected 1 times.</explanation>
+      <successResult>false</successResult>
+      <actualResult>0</actualResult>
     </expect-rule>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>shippingTotal</fieldName>
           <expected>10.99</expected>
-          <successResult>true</successResult>
-          <explanation>[$sc] field [shippingTotal] was [10.99].</explanation>
+          <actualResult>0.0</actualResult>
+          <successResult>false</successResult>
+          <explanation>[$sc] field [shippingTotal] was [0.0] expected [10.99].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -257,7 +260,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2015-04-06 02:14:11.679 UTC</lastRunResult>
+  <lastRunResult>2015-04-06 02:57:24.566 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.meliorix.coolstore</packageName>
