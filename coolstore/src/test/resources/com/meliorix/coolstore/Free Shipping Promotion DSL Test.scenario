@@ -23,6 +23,23 @@
       <name>$sc1</name>
       <isModify>false</isModify>
     </fact-data>
+    <fact-data>
+      <type>ShoppingCart</type>
+      <fieldData>
+        <field-data>
+          <name>cartItemTotal</name>
+          <value>74.99</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>shippingTotal</name>
+          <value>10.99</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>$sc2</name>
+      <isModify>false</isModify>
+    </fact-data>
     <execution-trace/>
     <expect-rule>
       <ruleName>Free Shipping Promotion DSL</ruleName>
