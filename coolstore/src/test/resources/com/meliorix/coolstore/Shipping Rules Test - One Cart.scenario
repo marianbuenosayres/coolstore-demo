@@ -157,6 +157,40 @@
           <fieldName>shippingTotal</fieldName>
           <expected>6.99</expected>
           <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
+      </fieldValues>
+      <name>$sc</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
+    <fact-data>
+      <type>ShoppingCart</type>
+      <fieldData>
+        <field-data>
+          <name>cartItemTotal</name>
+          <value>75</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>shippingTotal</name>
+          <value>0</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>$sc</name>
+      <isModify>true</isModify>
+    </fact-data>
+    <execution-trace/>
+    <expect-rule>
+      <ruleName>Row 4 Shipping Rules</ruleName>
+      <expectedCount>1</expectedCount>
+    </expect-rule>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>shippingTotal</fieldName>
+          <expected>8.99</expected>
+          <operator>==</operator>
           <nature>0</nature>
         </expect-field>
       </fieldValues>
