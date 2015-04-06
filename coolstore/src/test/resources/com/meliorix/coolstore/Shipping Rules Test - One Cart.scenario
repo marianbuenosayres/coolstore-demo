@@ -11,23 +11,32 @@
       <fieldData>
         <field-data>
           <name>cartItemTotal</name>
-          <value>0.00</value>
+          <value>0.01</value>
           <nature>4</nature>
         </field-data>
       </fieldData>
       <name>$sc</name>
       <isModify>false</isModify>
     </fact-data>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>0</executionTimeResult>
+      <numberOfRulesFired>0</numberOfRulesFired>
+    </execution-trace>
     <expect-rule>
       <ruleName>Row 1 Shipping Rules</ruleName>
       <expectedCount>1</expectedCount>
+      <explanation>Rule [Row 1 Shipping Rules] activated 0 times. Expected 1 times.</explanation>
+      <successResult>false</successResult>
+      <actualResult>0</actualResult>
     </expect-rule>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>shippingTotal</fieldName>
           <expected>2.99</expected>
+          <actualResult></actualResult>
+          <successResult>false</successResult>
+          <explanation>[$sc] field [shippingTotal] was [] expected [2.99].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -52,24 +61,34 @@
       <name>$sc</name>
       <isModify>true</isModify>
     </fact-data>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>0</executionTimeResult>
+      <numberOfRulesFired>0</numberOfRulesFired>
+    </execution-trace>
     <expect-rule>
       <ruleName>Row 1 Shipping Rules</ruleName>
       <expectedCount>1</expectedCount>
+      <explanation>Rule [Row 1 Shipping Rules] activated 0 times. Expected 1 times.</explanation>
+      <successResult>false</successResult>
+      <actualResult>0</actualResult>
     </expect-rule>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>shippingTotal</fieldName>
           <expected>2.99</expected>
+          <actualResult>0.0</actualResult>
+          <successResult>false</successResult>
+          <explanation>[$sc] field [shippingTotal] was [0.0] expected [2.99].</explanation>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>$sc</name>
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
+  <lastRunResult>2015-04-06 01:53:54.621 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.meliorix.coolstore</packageName>
