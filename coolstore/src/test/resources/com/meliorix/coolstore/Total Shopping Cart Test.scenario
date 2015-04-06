@@ -51,18 +51,24 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>0</executionTimeResult>
-      <numberOfRulesFired>0</numberOfRulesFired>
+      <executionTimeResult>3</executionTimeResult>
+      <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
     <expect-rule>
       <ruleName>Total Shopping Cart</ruleName>
+      <explanation>Rule [Total Shopping Cart] was activated 2 times.</explanation>
       <expectedFire>true</expectedFire>
+      <successResult>true</successResult>
+      <actualResult>2</actualResult>
     </expect-rule>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>cartTotal</fieldName>
-          <expected></expected>
+          <expected>0.00</expected>
+          <actualResult>0.0</actualResult>
+          <successResult>false</successResult>
+          <explanation>[$sc1] field [cartTotal] was [0.0] expected [].</explanation>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
@@ -75,15 +81,17 @@
         <expect-field>
           <fieldName>cartTotal</fieldName>
           <expected>24.990000000000002</expected>
+          <successResult>true</successResult>
+          <explanation>[$sc2] field [cartTotal] was [24.990000000000002].</explanation>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>$sc2</name>
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2015-04-06 02:47:28.482 UTC</lastRunResult>
+  <lastRunResult>2015-04-06 02:53:49.458 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.meliorix.coolstore</packageName>
