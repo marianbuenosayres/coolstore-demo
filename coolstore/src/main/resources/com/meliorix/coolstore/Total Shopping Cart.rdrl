@@ -7,5 +7,9 @@ rule "Total Shopping Cart"
 	no-loop true
 	ruleflow-group "total-rules"
 	when
+		$sc : ShoppingCart( $itemTotal : cartItemTotal, $promoSavings : cartItemPromoSavings, $shipTotal : shippingTotal)
 	then
+		modify( $sc ) {
+				setCartTotal( $itemTotal + $shipTotal - $promoSavings )
+		}
 end
