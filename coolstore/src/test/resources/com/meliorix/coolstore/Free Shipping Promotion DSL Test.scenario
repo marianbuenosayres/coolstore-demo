@@ -40,16 +40,25 @@
       <name>$sc2</name>
       <isModify>false</isModify>
     </fact-data>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>2</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
+    </execution-trace>
     <expect-rule>
       <ruleName>Free Shipping Promotion DSL</ruleName>
       <expectedCount>1</expectedCount>
+      <explanation>Rule [Free Shipping Promotion DSL] activated 1 times.</explanation>
+      <successResult>true</successResult>
+      <actualResult>1</actualResult>
     </expect-rule>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>shippingTotal</fieldName>
           <expected></expected>
+          <actualResult>0.0</actualResult>
+          <successResult>false</successResult>
+          <explanation>[$sc1] field [shippingTotal] was [0.0] expected [].</explanation>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
@@ -62,14 +71,17 @@
         <expect-field>
           <fieldName>shippingTotal</fieldName>
           <expected>10.99</expected>
+          <successResult>true</successResult>
+          <explanation>[$sc2] field [shippingTotal] was [10.99].</explanation>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>$sc2</name>
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
+  <lastRunResult>2015-04-06 01:33:06.884 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.meliorix.coolstore</packageName>
